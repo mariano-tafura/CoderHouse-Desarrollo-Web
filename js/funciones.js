@@ -1,6 +1,9 @@
 //CREACION OPCIONES DE SELECT
 function function_option(variable, elemSelect) {
     var opt = document.createElement("option")
+    opt.setAttribute("value",`none`)
+
+    
     elemSelect.appendChild(opt)
     variable.forEach((elemento)=>{
         
@@ -17,6 +20,7 @@ function create_fila(variable) {
     th_new.setAttribute("class",`th_value`)
     select_new=document.createElement("select")
     select_new.setAttribute("class",`select_value`)
+
         function_option(variable, select_new)
     th_new.appendChild(select_new)
     tr_new.appendChild(th_new)
@@ -33,7 +37,6 @@ function comprobacion_rta(rta, solucion) {
         } else errores.push(valor_rta) && console.log("Casillero incorrecto")
     })
 }
-
 
 //----FUNCION RESULTADO JUEGO----
 

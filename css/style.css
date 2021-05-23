@@ -4,7 +4,7 @@
 }
 
 .container{
-background-color: rgb(223, 251, 232);
+background-color: rgba(223, 251, 232, 0.918);
 }
 
 
@@ -81,12 +81,7 @@ ul li{
 
 
 select{
-    /* width: 95%;
-    height: 10vh;
-    margin: 3px;
-    display: flex;
-    justify-content: space-evenly; */
-    display: block;
+  display: block;
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
@@ -202,11 +197,15 @@ input[type="checkbox"]:checked:after {
 
 
 
-option:nth-child(2){
-    background-color: #aaa;
-}
 
 
+/* select{
+    background-color: rgba(0,0,0,0.3);
+    color:#fff;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+    }
 
-
-
+option{
+    background-color: rgba(0,0,0,0.3) !important;
+    box-shadow:0 1px 0 rgba(0,0,0,0.4);
+} */
