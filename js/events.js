@@ -154,32 +154,7 @@ $("#clean_button").click(()=>{
 })
 
 
-//-------------------------------
-
-// $("select").change(function() {
-//     var valor=$(this).val()
-//     var opt_val=$(`option:not("selected")`).val()
-//     var val_sel=$("select").val()
-//     $(this).attr("value",valor)
-//     $(this).addClass(`value_${valor}`)
-
-//     $('select').each(function(x) { 
-//         console.log(valor)
-//         console.log(opt_val)
-//         $(`select`).children(`option`).prop("disabled",false)
-//     })
-
-//     $('select').each(function(x) { 
-//         $("select").find(`option[value=${valor}]`).prop("disabled",true);   
-//         $(`.value_${valor}`).find(`option[value="${valor}"]`).prop("disabled",true)
-//         $(`.value_${valor}`).siblings().find(`option[value="${valor}"]`).prop("disabled",true)
-
-// })
-
-// })
-
-
-
+//---------------DESHABILITAR OPTION----------------
 
 $("select").change(function() {
     var valor=$(this).val()
@@ -191,14 +166,15 @@ $("select").change(function() {
     })
 
     $('select').each(function(x) { 
-        var val_sel=$(`.value_${x}`).val()
+        var val_select=$(`.value_${x}`).val()
         $("select").find(`option[value=${valor}]`).prop("disabled",true);   
-        console.log(val_sel)
-        $(`select[value="${val_sel}"]`).find(`option[value="${val_sel}"]`).prop("disabled",true)
+        if($(`select[value="${val_select}"]`)){
+            $(`select`).find(`option[value="${val_select}"]`).prop("disabled",true)
+            $(`select`).find(`option[value="none"]`).prop("disabled",false)
+        }
         });
-
-
 })
+
 
 
 
