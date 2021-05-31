@@ -33,8 +33,7 @@ const item_check_animate={"opacity":"0.5","font-size":"14px"}
 const item_check_animate2={"opacity":"1","font-size":"15px"}
 const item_uncheck_css={"color":"black","opacity":"1","text-decoration":"none"}
 const color_option={"color":"rgba(175, 1, 1, 0.80)", "text-decoration":"line-through"}
-const modal_ingresarDatos={"display":"block","top":"2000","left":"2000"}
-
+   
 
 
 //---------NUEVO JUGADOR--------

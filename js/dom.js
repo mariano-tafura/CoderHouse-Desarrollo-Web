@@ -66,7 +66,7 @@ function create_modal_lost() {
     let modal_lost=document.createElement("div")
     modal_lost.setAttribute("id","modal_lost")
     modal_lost.setAttribute("class","modalContainer")
-    modal_lost.innerHTML=`<div class=modal-content><h2>Lo siento ${nuevo_jugador.nombre} ${nuevo_jugador.apellido}, perdiste.Intentalo de nuevo!</h2><button class=reintentar>Reintentar</button></div>`
+    modal_lost.innerHTML=`<div class=modal-content><h2>Lo siento ${nuevo_jugador.nombre.toUpperCase()} ${nuevo_jugador.apellido.toUpperCase()}, perdiste   <i class="bi bi-emoji-frown"></i></h2><button id=reintentar type=reset>Jugar de nuevo</button></div>`
     mi_tabla.appendChild(modal_lost)
 }
 
@@ -77,11 +77,9 @@ function create_modal_win() {
     let modal_win=document.createElement("div")
     modal_win.setAttribute("id","modal_win")
     modal_win.setAttribute("class","modalContainer")
-    modal_win.innerHTML=`<div class=modal-content><span class=close>x</span><h2>Felicitaciones ${nuevo_jugador.nombre}, ganaste!!</h2></div>`
+    modal_win.innerHTML=`<div class=modal-content><span class=close>x</span><h2>Felicitaciones ${nuevo_jugador.nombre.toUpperCase()}, ganaste!!   <i class="bi bi-emoji-smile"></i></h2></div>`
     mi_tabla.appendChild(modal_win)
 }
-
-
 
 
 //----------ITEMS LIST-----------------

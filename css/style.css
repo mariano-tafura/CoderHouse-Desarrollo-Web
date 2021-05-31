@@ -9,31 +9,29 @@
     height: auto;
 }
 
-
+h3 b{
+    color: rgb(116, 49, 49);
+}
 .titulo{
-    display: none;
-    display: flex;
+    font-size: 2rem;
     align-items: center;
-    justify-content: center;
-    color: #746c6c;
-    box-shadow: 0 2px 2px;
-    width: 50%;
+    text-align: center;
+    color: #c0b0b0;
+  
     text-decoration: none;
     background-image: linear-gradient(black,black);
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 0% 5%;
-    transition: 1s;    
-
+    transition: 2s;    
     }
-    /* .titulo:hover{
-    background-size: 50% 5%;
-    color: black;
-    } */
 
-h3{
+.descripcion{
     margin: 1rem;
     font-size: 1.5rem;
+    font-weight: 200;
+    opacity: .4;
+    transition: 2s;
 }
 
 .titulo_pez{
@@ -45,7 +43,7 @@ h3{
     font-size: 1.1rem;
 }
 
-form{
+#form_datos{
     margin-top: 2rem;
     display: flex;
     flex-flow: column nowrap;
@@ -53,7 +51,7 @@ form{
     align-items: center;
 }
 
-form input{
+#form_datos input{
     width: 20%;
     height: 2rem;
     margin-bottom: .4rem;
@@ -213,6 +211,6 @@ input[type="checkbox"]:checked:after {
     cursor: pointer;
 }
 
-.reintentar{
-    width: 10vw;
+#reintentar{
+    width: 15vw;
 }
