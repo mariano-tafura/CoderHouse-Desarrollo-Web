@@ -137,7 +137,6 @@ $( document ).ready(function() {
                 let x=$(`.fila${i} select`)
             
                 for (let j = 0; j < 5; j++) {
-                    // console.log( x[j].value)
                     respuestas_matriz.push(x[j].value)
                 }
             }
@@ -172,8 +171,9 @@ $( document ).ready(function() {
         $(".lista").animate(item_check_animate)
         $(".lista").animate(item_check_animate2)
         $(`select option`).css("color","green")
-        $("#modal_lost").css("display","none")
+        $("#modal_lost").slideUp(200)
         respuestas_matriz=[]
+        
     })
         
     //Modal Ganador - creacion y enventos asociados
@@ -186,6 +186,7 @@ $( document ).ready(function() {
         function(){
         $("#modal_win").css("display","none")
         })
+        $("select").css({"border":"2px solid green"})
     })
 
     

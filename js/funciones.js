@@ -32,7 +32,6 @@ function comprobacion_rta(rta, solucion) {
 function resultado() {
     if(errores.length==0){
         $("#modal_win").css("display","block")
-        // $("#modal_win .modal-content").css("display","block")
         $("#modal_win").delay()
         $("#modal_win").animate({
           bottom:"0"
@@ -41,7 +40,6 @@ function resultado() {
   
     }else {
         $("#modal_lost").css("display","block")
-        // $("#modal_lost .modal-content").css("display","block")
         $("#modal_lost").delay(700)
         $("#modal_lost").animate({top:"0"}) 
     }
